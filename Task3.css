@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    background-image:url(/picture.png);
+    background-repeat:no-repeat;
+    background-size: cover; 
+    background-attachment:fixed; 
+}
+#main{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    gap: 40px;
+}
+/*quiz*/
+#quiz{
+    width: 720px;
+    height: auto;
+    background-color: white;
+    border-color: black;
+    border-radius: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 97px;
+    box-shadow: 0 10px 25px rgba(121, 51, 51, 0.2);
+}
+#quiz h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    background-color: rgb(119, 46, 188);
+    padding-top: 3%;
+    color: white;
+     margin: 0;
+    padding-top: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+#quiz h3{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 0%;
+}
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 92%;
+    border: 2px solid #222;
+    padding: 10px;
+    margin: 13px 0;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.btn:hover:not([disabled]){
+    background-color: #222;
+    color:white;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next{
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    background:#331dc0;
+    color:white;
+    border-radius: 10px;
+     border: none;
+    cursor: pointer;
+
+}
+.correct{
+    background-color: #9aeabc;
+}
+.incorrect{
+    background-color: #ff9393;
+}
+
+/*joke*/
+.box{
+    height: 550px;
+     width: 720px;
+    border-radius: 40px;
+    background-color: white;
+    margin-right: 40px;
+    margin-top: 97px;
+}
+#head{
+    padding: 20px 0;
+    margin: 0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    background-color: rgb(119, 46, 188);
+    
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+   
+}
+.img{
+    height: 150px;
+    width: 162px;
+    justify-content: center;
+    display: block;
+    margin: 30px auto;
+    max-width: 80%;  
+}
+#button{
+     display: block;
+    margin: 20px auto;
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    background:#331dc0;
+    color:white;
+    border-radius: 10px;
+     border: none;
+    cursor: pointer;
+}
+#joke {
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    margin: 20px auto;
+    padding: 0 20px;
+    
+}
+
+@media only screen and (max-width: 575.98px) {
+    #main {
+        flex-direction: column;
+        padding: 20px;
+    }
+    #quiz, .box {
+        width: 100%;
+        margin-right: 0;
+    }
+    #quiz h2, #head {
+        font-size: 28px;
+    }
+    .btn, #next, #button {
+        width: 100%;
+        font-size: 16px;
+    }
+    #button,#next{
+        width: 200px;
+    }
+    #options{
+        width: 300px;
+        padding-left: 20px;
+    }
+    #h3{
+        font-size: 2px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    #main {
+        flex-direction: column;
+        padding: 30px;
+    }
+    #quiz, .box {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .btn, #next, #button {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    #main {
+        flex-direction: column;
+        padding: 40px;
+    }
+    #quiz, .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    #quiz, .box {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #quiz, .box {
+        width: 720px;
+    }
+}
